@@ -12,6 +12,14 @@
 		3B3653842086BE1900E05473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653822086BE1900E05473 /* Main.storyboard */; };
 		3B3653862086BE1900E05473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653852086BE1900E05473 /* Assets.xcassets */; };
 		3B3653892086BE1900E05473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653872086BE1900E05473 /* LaunchScreen.storyboard */; };
+		DD0D0492208FF00400ACF6CA /* DashboardVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */; };
+		DD0D0494208FF3C900ACF6CA /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */; };
+		DD0D0496208FF3DF00ACF6CA /* RealmWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */; };
+		DD0D0498208FF78C00ACF6CA /* Homework.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0497208FF78C00ACF6CA /* Homework.swift */; };
+		DD0D049A208FF8E100ACF6CA /* Assignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0499208FF8E100ACF6CA /* Assignment.swift */; };
+		DD0D049C208FFEEC00ACF6CA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D049B208FFEEC00ACF6CA /* User.swift */; };
+		DD0D049E209010E100ACF6CA /* HomeworkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D049D209010E100ACF6CA /* HomeworkViewController.swift */; };
+		F222E957F97653933BC2DA91 /* Pods_Homework_Navigator.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F86EFE003049D1F4240E235C /* Pods_Homework_Navigator.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +30,16 @@
 		3B3653852086BE1900E05473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B3653882086BE1900E05473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B36538A2086BE1900E05473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B26C63C0BC363DC21FF8D9AE /* Pods-Homework Navigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Navigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator.debug.xcconfig"; sourceTree = "<group>"; };
+		B7037DF90A1FA9503926BCA9 /* Pods-Homework Navigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Navigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator.release.xcconfig"; sourceTree = "<group>"; };
+		DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardVIewController.swift; path = "View Controllers/DashboardVIewController.swift"; sourceTree = "<group>"; };
+		DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
+		DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWrite.swift; sourceTree = "<group>"; };
+		DD0D0497208FF78C00ACF6CA /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
+		DD0D0499208FF8E100ACF6CA /* Assignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment.swift; sourceTree = "<group>"; };
+		DD0D049B208FFEEC00ACF6CA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		DD0D049D209010E100ACF6CA /* HomeworkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeworkViewController.swift; sourceTree = "<group>"; };
+		F86EFE003049D1F4240E235C /* Pods_Homework_Navigator.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Homework_Navigator.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +47,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F222E957F97653933BC2DA91 /* Pods_Homework_Navigator.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +59,8 @@
 			children = (
 				3B36537D2086BE1900E05473 /* Homework Navigator */,
 				3B36537C2086BE1900E05473 /* Products */,
+				6A8DD263E9AC61D2EF9B68DF /* Pods */,
+				90BB24CDACACB83B6EB16A0F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -60,8 +81,32 @@
 				3B3653852086BE1900E05473 /* Assets.xcassets */,
 				3B3653872086BE1900E05473 /* LaunchScreen.storyboard */,
 				3B36538A2086BE1900E05473 /* Info.plist */,
+				DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */,
+				DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */,
+				DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */,
+				DD0D0497208FF78C00ACF6CA /* Homework.swift */,
+				DD0D0499208FF8E100ACF6CA /* Assignment.swift */,
+				DD0D049B208FFEEC00ACF6CA /* User.swift */,
+				DD0D049D209010E100ACF6CA /* HomeworkViewController.swift */,
 			);
 			path = "Homework Navigator";
+			sourceTree = "<group>";
+		};
+		6A8DD263E9AC61D2EF9B68DF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B26C63C0BC363DC21FF8D9AE /* Pods-Homework Navigator.debug.xcconfig */,
+				B7037DF90A1FA9503926BCA9 /* Pods-Homework Navigator.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		90BB24CDACACB83B6EB16A0F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F86EFE003049D1F4240E235C /* Pods_Homework_Navigator.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +116,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 3B36538D2086BE1900E05473 /* Build configuration list for PBXNativeTarget "Homework Navigator" */;
 			buildPhases = (
+				71CC86C8E0D4870A17C52EF3 /* [CP] Check Pods Manifest.lock */,
 				3B3653772086BE1900E05473 /* Sources */,
 				3B3653782086BE1900E05473 /* Frameworks */,
 				3B3653792086BE1900E05473 /* Resources */,
+				59E3A0757C036CD559F22D79 /* [CP] Embed Pods Frameworks */,
+				AF4E6627E6BC28F85D1C288B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +179,76 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		59E3A0757C036CD559F22D79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71CC86C8E0D4870A17C52EF3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Homework Navigator-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AF4E6627E6BC28F85D1C288B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		3B3653772086BE1900E05473 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				3B3653812086BE1900E05473 /* ViewController.swift in Sources */,
+				DD0D049A208FF8E100ACF6CA /* Assignment.swift in Sources */,
+				DD0D0492208FF00400ACF6CA /* DashboardVIewController.swift in Sources */,
+				DD0D0496208FF3DF00ACF6CA /* RealmWrite.swift in Sources */,
+				DD0D049C208FFEEC00ACF6CA /* User.swift in Sources */,
+				DD0D049E209010E100ACF6CA /* HomeworkViewController.swift in Sources */,
+				DD0D0494208FF3C900ACF6CA /* RealmQuery.swift in Sources */,
 				3B36537F2086BE1900E05473 /* AppDelegate.swift in Sources */,
+				DD0D0498208FF78C00ACF6CA /* Homework.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +383,7 @@
 		};
 		3B36538E2086BE1900E05473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B26C63C0BC363DC21FF8D9AE /* Pods-Homework Navigator.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -287,6 +399,7 @@
 		};
 		3B36538F2086BE1900E05473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B7037DF90A1FA9503926BCA9 /* Pods-Homework Navigator.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
