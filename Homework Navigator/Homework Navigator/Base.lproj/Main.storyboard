@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -187,38 +188,38 @@
                                         <rect key="frame" x="0.0" y="0.0" width="355" height="323"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="upcomingCell" id="596-6c-kXN" customClass="AssignmentCell" customModule="Homework_Navigator" customModuleProvider="target">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="topFiveCell" id="gEJ-B1-ZWr" customClass="AssignmentCell" customModule="Homework_Navigator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="355" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
-                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="596-6c-kXN" id="6Fb-05-B1M">
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gEJ-B1-ZWr" id="s2E-NC-FSK">
                                                     <rect key="frame" x="0.0" y="0.0" width="355" height="43.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="dueDate" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2r-Ng-p6A">
-                                                            <rect key="frame" x="15" y="8" width="48" height="27.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Class" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="odg-UH-ulp">
+                                                            <rect key="frame" x="15" y="11" width="53" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" restorationIdentifier="assignmentName" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zxo-gP-Whz">
-                                                            <rect key="frame" x="292" y="8" width="48" height="27.5"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Homework" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ki-Bh-fZn">
+                                                            <rect key="frame" x="236" y="11" width="104" height="22"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                     </subviews>
                                                     <constraints>
-                                                        <constraint firstAttribute="bottom" secondItem="Zxo-gP-Whz" secondAttribute="bottom" constant="8" id="2AU-eH-y67"/>
-                                                        <constraint firstItem="r2r-Ng-p6A" firstAttribute="leading" secondItem="6Fb-05-B1M" secondAttribute="leading" constant="15" id="4X7-Id-ljQ"/>
-                                                        <constraint firstAttribute="bottom" secondItem="r2r-Ng-p6A" secondAttribute="bottom" constant="8" id="F4O-dt-gqW"/>
-                                                        <constraint firstItem="r2r-Ng-p6A" firstAttribute="top" secondItem="6Fb-05-B1M" secondAttribute="top" constant="8" id="HX6-fT-z4B"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Zxo-gP-Whz" secondAttribute="trailing" constant="15" id="KWt-1h-Xid"/>
-                                                        <constraint firstItem="Zxo-gP-Whz" firstAttribute="top" secondItem="6Fb-05-B1M" secondAttribute="top" constant="8" id="mnU-RL-4DE"/>
+                                                        <constraint firstItem="odg-UH-ulp" firstAttribute="top" secondItem="s2E-NC-FSK" secondAttribute="topMargin" id="89E-v6-Co9"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="odg-UH-ulp" secondAttribute="bottom" id="MC7-2Q-mgN"/>
+                                                        <constraint firstItem="9ki-Bh-fZn" firstAttribute="top" secondItem="s2E-NC-FSK" secondAttribute="topMargin" id="P4v-Sn-OXP"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="9ki-Bh-fZn" secondAttribute="trailing" id="kYM-lU-F5G"/>
+                                                        <constraint firstItem="odg-UH-ulp" firstAttribute="leading" secondItem="s2E-NC-FSK" secondAttribute="leadingMargin" id="oSr-8C-zJr"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="9ki-Bh-fZn" secondAttribute="bottom" id="syh-Lg-JfK"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
-                                                    <outlet property="assignmentNameLabel" destination="Zxo-gP-Whz" id="eov-HD-hez"/>
-                                                    <outlet property="dateLabel" destination="r2r-Ng-p6A" id="xG9-lh-68c"/>
+                                                    <outlet property="classLabel" destination="odg-UH-ulp" id="Qyv-jV-bCt"/>
+                                                    <outlet property="homeworkLabel" destination="9ki-Bh-fZn" id="sux-aj-afS"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -261,6 +262,7 @@
                     <tabBarItem key="tabBarItem" title="Dashboard" image="Dashboard" selectedImage="Dashboard" id="9l1-wK-VVX"/>
                     <connections>
                         <outlet property="nameLabel" destination="1hx-j2-HMB" id="4yB-Ju-JKm"/>
+                        <outlet property="tableViewFirstFive" destination="jBO-4O-Sun" id="xuI-h5-vtz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kh4-CP-2qa" userLabel="First Responder" sceneMemberID="firstResponder"/>

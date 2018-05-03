@@ -10,13 +10,37 @@
 import UIKit
 // add descriptive label with the course number
 class AssignmentCell: UITableViewCell {
-    
-//    @IBOutlet weak var dateLabel: UILabel!
-//    @IBOutlet weak var assignmentNameLabel: UILabel!
+    @IBOutlet weak var classLabel: UILabel!
+    @IBOutlet weak var homeworkLabel: UILabel!
 }
 class DashboardVIewController: UIViewController
-//    , UITableViewDelegate, UITableViewDataSource
+    , UITableViewDelegate, UITableViewDataSource
 {
+    
+    let homeworkArray = [("Sudoku", "CSCI 340"), ("LZW", "CSCI 340"), ("Paper/Presentation", "CSCI 355"), ("Final Project", "CSCI 423"), ("Racket", "CSCI 333")]
+    
+    @IBOutlet weak var tableViewFirstFive: UITableView!
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return homeworkArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell  = tableViewFirstFive.dequeueReusableCell(withIdentifier: "topFiveCell", for: indexPath) as! AssignmentCell
+        
+        
+//        let homework = homeworkArray[indexPath.row]
+        
+        cell.classLabel.text = homeworkArray[indexPath.row].1
+        cell.homeworkLabel.text = homeworkArray[indexPath.row].0
+//        cell.detailTextLabel?.text = homeworkArray[indexPath.row].0
+        return cell
+    }
+    
     @IBOutlet weak var nameLabel: UILabel!
     
 //    let fiveAssignments = getNextFive()
@@ -46,6 +70,9 @@ class DashboardVIewController: UIViewController
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableViewFirstFive.delegate = self
+        tableViewFirstFive.dataSource = self
 //        tableView.delegate = self
 //        tableView.dataSource = self
 //        self.tableView.reloadData()
@@ -66,6 +93,11 @@ class DashboardVIewController: UIViewController
 //        }
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+                self.tableViewFirstFive.reloadData()
     }
 
     override func didReceiveMemoryWarning() {
