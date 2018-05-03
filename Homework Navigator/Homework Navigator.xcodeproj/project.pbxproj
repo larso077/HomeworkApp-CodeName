@@ -12,6 +12,7 @@
 		3B3653842086BE1900E05473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653822086BE1900E05473 /* Main.storyboard */; };
 		3B3653862086BE1900E05473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653852086BE1900E05473 /* Assets.xcassets */; };
 		3B3653892086BE1900E05473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653872086BE1900E05473 /* LaunchScreen.storyboard */; };
+		3B7EE5BD209B786F00B55DED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE5BC209B786F00B55DED /* ProfileViewController.swift */; };
 		DD0D0492208FF00400ACF6CA /* DashboardVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */; };
 		DD0D0494208FF3C900ACF6CA /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */; };
 		DD0D0496208FF3DF00ACF6CA /* RealmWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */; };
@@ -30,9 +31,10 @@
 		3B3653852086BE1900E05473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B3653882086BE1900E05473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B36538A2086BE1900E05473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B7EE5BC209B786F00B55DED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B26C63C0BC363DC21FF8D9AE /* Pods-Homework Navigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Navigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator.debug.xcconfig"; sourceTree = "<group>"; };
 		B7037DF90A1FA9503926BCA9 /* Pods-Homework Navigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Navigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator.release.xcconfig"; sourceTree = "<group>"; };
-		DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DashboardVIewController.swift; path = "View Controllers/DashboardVIewController.swift"; sourceTree = "<group>"; };
+		DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVIewController.swift; sourceTree = "<group>"; };
 		DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmQuery.swift; sourceTree = "<group>"; };
 		DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmWrite.swift; sourceTree = "<group>"; };
 		DD0D0497208FF78C00ACF6CA /* Homework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Homework.swift; sourceTree = "<group>"; };
@@ -81,15 +83,40 @@
 				3B3653852086BE1900E05473 /* Assets.xcassets */,
 				3B3653872086BE1900E05473 /* LaunchScreen.storyboard */,
 				3B36538A2086BE1900E05473 /* Info.plist */,
-				DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */,
-				DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */,
-				DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */,
-				DD0D0497208FF78C00ACF6CA /* Homework.swift */,
-				DD0D0499208FF8E100ACF6CA /* Assignment.swift */,
-				DD0D049B208FFEEC00ACF6CA /* User.swift */,
-				DD0D049D209010E100ACF6CA /* HomeworkViewController.swift */,
+				3B435787209B979800FDD199 /* Realm */,
+				3B435786209B975700FDD199 /* ViewControllers */,
+				3B435788209B97B200FDD199 /* Model */,
 			);
 			path = "Homework Navigator";
+			sourceTree = "<group>";
+		};
+		3B435786209B975700FDD199 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D049D209010E100ACF6CA /* HomeworkViewController.swift */,
+				DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */,
+				3B7EE5BC209B786F00B55DED /* ProfileViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		3B435787209B979800FDD199 /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */,
+				DD0D0495208FF3DF00ACF6CA /* RealmWrite.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		3B435788209B97B200FDD199 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DD0D049B208FFEEC00ACF6CA /* User.swift */,
+				DD0D0499208FF8E100ACF6CA /* Assignment.swift */,
+				DD0D0497208FF78C00ACF6CA /* Homework.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6A8DD263E9AC61D2EF9B68DF /* Pods */ = {
@@ -215,7 +242,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		AF4E6627E6BC28F85D1C288B /* [CP] Copy Pods Resources */ = {
@@ -241,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3B3653812086BE1900E05473 /* ViewController.swift in Sources */,
+				3B7EE5BD209B786F00B55DED /* ProfileViewController.swift in Sources */,
 				DD0D049A208FF8E100ACF6CA /* Assignment.swift in Sources */,
 				DD0D0492208FF00400ACF6CA /* DashboardVIewController.swift in Sources */,
 				DD0D0496208FF3DF00ACF6CA /* RealmWrite.swift in Sources */,

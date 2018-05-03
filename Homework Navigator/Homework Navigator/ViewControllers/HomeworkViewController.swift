@@ -8,24 +8,25 @@
 
 import UIKit
 
-class HomeworkViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
+class HomeworkViewController: UIViewController
+//    ,UITableViewDelegate,UITableViewDataSource
 {
-    //this method should return the number of data you wish to represent in your tableview separated by section.
-    //examples of this would be return numberOfAssignmentsInOneClass, with a case switch on the section int
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
-    }
-    // this one gives you a tableview cell at each row, usually grab the object from your array at objectArray[indexPath], use data
-    //  from that object to fill in the labels and stuff in your tableviewcell
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        //customize this, this is only to eliminate errors.
-        let tableviewcell = UITableViewCell()
-        return tableviewcell
-    }
-    // this is how
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
-    }
+//    //this method should return the number of data you wish to represent in your tableview separated by section.
+//    //examples of this would be return numberOfAssignmentsInOneClass, with a case switch on the section int
+//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return 0
+//    }
+//    // this one gives you a tableview cell at each row, usually grab the object from your array at objectArray[indexPath], use data
+//    //  from that object to fill in the labels and stuff in your tableviewcell
+//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        //customize this, this is only to eliminate errors.
+//        let tableviewcell = UITableViewCell()
+//        return tableviewcell
+//    }
+//    // this is how
+//    func numberOfSections(in tableView: UITableView) -> Int {
+//        return 1
+//    }
     
     //put any data initialization here
     override func viewDidLoad() {

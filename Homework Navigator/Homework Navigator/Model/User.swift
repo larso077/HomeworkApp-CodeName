@@ -13,4 +13,5 @@ class User {
     static let shared = User()
     let name = "Test User Jim"
     let enrolledCourses = ["333", "279", "666"]
+    let email = "useremail@gamil.com"
 }
