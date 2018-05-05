@@ -8,30 +8,52 @@
 
 import UIKit
 
-class HomeworkViewController: UIViewController
-//    ,UITableViewDelegate,UITableViewDataSource
+
+// Assignment Object. Holds two labels that show the class label and the homework assignment
+class AssignmentCell: UITableViewCell {
+    @IBOutlet weak var classLabel: UILabel!
+    @IBOutlet weak var homeworkLabel: UILabel!
+}
+
+class HomeworkViewController: UIViewController,UITableViewDelegate,UITableViewDataSource
 {
-//    //this method should return the number of data you wish to represent in your tableview separated by section.
-//    //examples of this would be return numberOfAssignmentsInOneClass, with a case switch on the section int
-//    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-//        return 0
-//    }
-//    // this one gives you a tableview cell at each row, usually grab the object from your array at objectArray[indexPath], use data
-//    //  from that object to fill in the labels and stuff in your tableviewcell
-//    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-//        //customize this, this is only to eliminate errors.
-//        let tableviewcell = UITableViewCell()
-//        return tableviewcell
-//    }
-//    // this is how
-//    func numberOfSections(in tableView: UITableView) -> Int {
-//        return 1
-//    }
+
+    let homeworkArray = [("Sudoku", "CSCI 340"), ("LZW", "CSCI 340"), ("Paper/Presentation", "CSCI 355"), ("Final Project", "CSCI 423"), ("Racket", "CSCI 333"),
+    ("Presentation", "ENG 204"), ("Final Report", "ENG 204"), ("Bus Quiz", "CSCI 355"),("Cache Quiz", "CSCI 355"),("Networks Quiz", "CSCI 355"),("Final Exam Quiz", "CSCI 355")]
     
+    @IBOutlet weak var tableViewAll: UITableView!
+    
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1;
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return homeworkArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell  = tableViewAll.dequeueReusableCell(withIdentifier: "allCells", for: indexPath) as! AssignmentCell
+        
+        
+        //        let homework = homeworkArray[indexPath.row]
+        
+        cell.classLabel.text = homeworkArray[indexPath.row].1
+        cell.homeworkLabel.text = homeworkArray[indexPath.row].0
+        //        cell.detailTextLabel?.text = homeworkArray[indexPath.row].0
+        return cell
+    }
+    
+    override func viewWillAppear(_ animated: Bool)
+    {
+        self.tableViewAll.reloadData()
+    }
     //put any data initialization here
     override func viewDidLoad() {
+    
+    
         super.viewDidLoad()
-
+        tableViewAll.delegate = self
+        tableViewAll.dataSource = self
         // Do any additional setup after loading the view.
     }
 
@@ -39,16 +61,5 @@ class HomeworkViewController: UIViewController
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    // add a viewWillAppear method if you need to do something every time this view comes up. should autofill
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
