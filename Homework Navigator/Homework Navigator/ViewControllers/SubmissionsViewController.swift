@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 class SubmissionCell: UITableViewCell {
     @IBOutlet weak var submissionLocation: UILabel!
     @IBOutlet weak var homeworkSubmissionLabel: UILabel!
@@ -68,7 +67,6 @@ class SubmissionsViewController: UIViewController
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 }
