@@ -12,6 +12,7 @@
 		3B3653842086BE1900E05473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653822086BE1900E05473 /* Main.storyboard */; };
 		3B3653862086BE1900E05473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653852086BE1900E05473 /* Assets.xcassets */; };
 		3B3653892086BE1900E05473 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3B3653872086BE1900E05473 /* LaunchScreen.storyboard */; };
+		3B50624D209F94950041FB17 /* SubmissionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B50624C209F94950041FB17 /* SubmissionsViewController.swift */; };
 		3B7EE5BD209B786F00B55DED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B7EE5BC209B786F00B55DED /* ProfileViewController.swift */; };
 		DD0D0492208FF00400ACF6CA /* DashboardVIewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */; };
 		DD0D0494208FF3C900ACF6CA /* RealmQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD0D0493208FF3C900ACF6CA /* RealmQuery.swift */; };
@@ -31,6 +32,7 @@
 		3B3653852086BE1900E05473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3B3653882086BE1900E05473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3B36538A2086BE1900E05473 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3B50624C209F94950041FB17 /* SubmissionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubmissionsViewController.swift; sourceTree = "<group>"; };
 		3B7EE5BC209B786F00B55DED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		B26C63C0BC363DC21FF8D9AE /* Pods-Homework Navigator.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Navigator.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator.debug.xcconfig"; sourceTree = "<group>"; };
 		B7037DF90A1FA9503926BCA9 /* Pods-Homework Navigator.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Homework Navigator.release.xcconfig"; path = "Pods/Target Support Files/Pods-Homework Navigator/Pods-Homework Navigator.release.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +98,7 @@
 				DD0D049D209010E100ACF6CA /* HomeworkViewController.swift */,
 				DD0D0491208FF00400ACF6CA /* DashboardVIewController.swift */,
 				3B7EE5BC209B786F00B55DED /* ProfileViewController.swift */,
+				3B50624C209F94950041FB17 /* SubmissionsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -271,6 +274,7 @@
 				3B7EE5BD209B786F00B55DED /* ProfileViewController.swift in Sources */,
 				DD0D049A208FF8E100ACF6CA /* Assignment.swift in Sources */,
 				DD0D0492208FF00400ACF6CA /* DashboardVIewController.swift in Sources */,
+				3B50624D209F94950041FB17 /* SubmissionsViewController.swift in Sources */,
 				DD0D0496208FF3DF00ACF6CA /* RealmWrite.swift in Sources */,
 				DD0D049C208FFEEC00ACF6CA /* User.swift in Sources */,
 				DD0D049E209010E100ACF6CA /* HomeworkViewController.swift in Sources */,
