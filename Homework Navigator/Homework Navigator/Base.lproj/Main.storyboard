@@ -14,31 +14,68 @@
         <!--Homework-->
         <scene sceneID="u2H-x6-EiL">
             <objects>
-                <viewController id="rHk-fU-xpT" sceneMemberID="viewController">
+                <viewController id="rHk-fU-xpT" customClass="HomeworkViewController" customModule="Homework_Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Eot-az-y9v">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="qg1-mS-AYW">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="qg1-mS-AYW">
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <color key="backgroundColor" red="0.26666666666666666" green="0.27058823529411763" blue="0.27058823529411763" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.2666666667" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="bAT-UW-gMy">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="homeworkCell" id="0tL-J4-70o" customClass="HomeworkCell" customModule="Homework_Navigator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="bAT-UW-gMy" id="SVe-pF-cRG">
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0tL-J4-70o" id="hPu-iy-VI8">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wW3-qq-8ub">
+                                                    <rect key="frame" x="15" y="11" width="150" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="25U-Zc-KiJ"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Due:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mr7-T0-Din">
+                                                    <rect key="frame" x="235" y="11" width="40" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="40" id="mCX-CF-aoe"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ivc-3x-Hm1">
+                                                    <rect key="frame" x="280" y="11" width="80" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="80" id="5pl-kg-wdL"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="wW3-qq-8ub" firstAttribute="leading" secondItem="hPu-iy-VI8" secondAttribute="leadingMargin" id="4eF-qx-LnG"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Mr7-T0-Din" secondAttribute="bottom" id="JvF-gy-ejW"/>
+                                                <constraint firstItem="Ivc-3x-Hm1" firstAttribute="leading" secondItem="Mr7-T0-Din" secondAttribute="trailing" constant="5" id="TSz-vB-qnW"/>
+                                                <constraint firstItem="Ivc-3x-Hm1" firstAttribute="top" secondItem="hPu-iy-VI8" secondAttribute="topMargin" id="VGd-bR-O6A"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ivc-3x-Hm1" secondAttribute="trailing" id="Zpt-eS-yxV"/>
+                                                <constraint firstItem="wW3-qq-8ub" firstAttribute="top" secondItem="hPu-iy-VI8" secondAttribute="topMargin" id="fpk-jk-68e"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ivc-3x-Hm1" secondAttribute="bottom" id="gBZ-bk-xlO"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="wW3-qq-8ub" secondAttribute="bottom" id="hlb-EH-859"/>
+                                                <constraint firstItem="Mr7-T0-Din" firstAttribute="top" secondItem="hPu-iy-VI8" secondAttribute="topMargin" id="jWe-L4-dFw"/>
+                                            </constraints>
                                         </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="gQa-cT-lCN">
-                                        <rect key="frame" x="0.0" y="99.5" width="375" height="44"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gQa-cT-lCN" id="PB5-18-age">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.22352941176470587" green="0.19607843137254902" blue="0.20392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                        <connections>
+                                            <outlet property="dueDateLabel" destination="Ivc-3x-Hm1" id="BZZ-wA-MC9"/>
+                                            <outlet property="homeworkLabel" destination="wW3-qq-8ub" id="GtA-Cd-q4P"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -53,6 +90,9 @@
                         <viewLayoutGuide key="safeArea" id="YMg-ZP-sfs"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Homework" image="Homework" selectedImage="Homework" id="Tn5-vJ-2ag"/>
+                    <connections>
+                        <outlet property="homeworkTableView" destination="qg1-mS-AYW" id="pNq-Fb-7El"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWa-ei-F5o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -61,7 +101,7 @@
         <!--Submissions-->
         <scene sceneID="cyW-vz-AcD">
             <objects>
-                <viewController id="iOh-ve-eB4" sceneMemberID="viewController">
+                <viewController id="iOh-ve-eB4" customClass="SubmissionsViewController" customModule="Homework_Navigator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wDG-Ay-3jK">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -70,6 +110,61 @@
                                 <rect key="frame" x="0.0" y="64" width="375" height="554"/>
                                 <color key="backgroundColor" red="0.2666666667" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
                                 <color key="sectionIndexBackgroundColor" red="0.2666666667" green="0.27058823529999998" blue="0.27058823529999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="submissionsCell" id="c4S-T9-hdD" customClass="SubmissionCell" customModule="Homework_Navigator" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="c4S-T9-hdD" id="gRF-VT-QvB">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rSn-aY-9WV">
+                                                    <rect key="frame" x="15" y="11" width="150" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="150" id="n0m-SC-YMG"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mPZ-Wp-MA9">
+                                                    <rect key="frame" x="270" y="11" width="90" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="90" id="p9m-z6-hE9"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Submit Loc:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f9T-Tu-9uT">
+                                                    <rect key="frame" x="165" y="11" width="100" height="22"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="100" id="J3e-vm-c3d"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.22352941179999999" green="0.1960784314" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rSn-aY-9WV" secondAttribute="bottom" id="0Bh-9f-1Ap"/>
+                                                <constraint firstItem="mPZ-Wp-MA9" firstAttribute="leading" secondItem="f9T-Tu-9uT" secondAttribute="trailing" constant="5" id="23F-s3-T5P"/>
+                                                <constraint firstItem="rSn-aY-9WV" firstAttribute="leading" secondItem="gRF-VT-QvB" secondAttribute="leadingMargin" id="8ss-Eg-5d3"/>
+                                                <constraint firstItem="mPZ-Wp-MA9" firstAttribute="top" secondItem="gRF-VT-QvB" secondAttribute="topMargin" id="BS8-oI-D9z"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="mPZ-Wp-MA9" secondAttribute="bottom" id="FRU-tF-JRW"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="f9T-Tu-9uT" secondAttribute="bottom" id="HKj-9Y-yhs"/>
+                                                <constraint firstItem="rSn-aY-9WV" firstAttribute="top" secondItem="gRF-VT-QvB" secondAttribute="topMargin" id="bGC-BS-3sS"/>
+                                                <constraint firstItem="f9T-Tu-9uT" firstAttribute="top" secondItem="gRF-VT-QvB" secondAttribute="topMargin" id="gX3-D9-BYd"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="mPZ-Wp-MA9" secondAttribute="trailing" id="jJo-Px-mYf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="homeworkSubmissionLabel" destination="rSn-aY-9WV" id="NSu-18-5hF"/>
+                                            <outlet property="submissionLocation" destination="mPZ-Wp-MA9" id="huW-Hc-L7b"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -82,6 +177,9 @@
                         <viewLayoutGuide key="safeArea" id="U8e-EY-inF"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Submissions" image="Submit" selectedImage="Submit" id="E38-g6-nWM"/>
+                    <connections>
+                        <outlet property="submissionTableView" destination="fQF-un-Pdf" id="woe-KP-Zps"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="diQ-f8-XkB" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -182,11 +280,12 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="82H-b2-Z1D">
-                                <rect key="frame" x="10" y="265" width="355" height="323"/>
+                                <rect key="frame" x="10" y="265" width="355" height="220"/>
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jBO-4O-Sun">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="323"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="220"/>
+                                        <color key="backgroundColor" red="0.22352941179999999" green="0.1960784314" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="sectionIndexBackgroundColor" red="0.22352941179999999" green="0.1960784314" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                         <prototypes>
                                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="topFiveCell" id="gEJ-B1-ZWr" customClass="AssignmentCell" customModule="Homework_Navigator" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="355" height="44"/>
@@ -217,6 +316,7 @@
                                                         <constraint firstAttribute="bottomMargin" secondItem="9ki-Bh-fZn" secondAttribute="bottom" id="syh-Lg-JfK"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
+                                                <color key="backgroundColor" red="0.22352941179999999" green="0.1960784314" blue="0.20392156859999999" alpha="1" colorSpace="calibratedRGB"/>
                                                 <connections>
                                                     <outlet property="classLabel" destination="odg-UH-ulp" id="Qyv-jV-bCt"/>
                                                     <outlet property="homeworkLabel" destination="9ki-Bh-fZn" id="sux-aj-afS"/>
@@ -227,6 +327,7 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="5dU-AJ-dVv"/>
                                     <constraint firstItem="jBO-4O-Sun" firstAttribute="top" secondItem="82H-b2-Z1D" secondAttribute="top" id="DBm-IQ-saz"/>
                                     <constraint firstItem="jBO-4O-Sun" firstAttribute="leading" secondItem="82H-b2-Z1D" secondAttribute="leading" id="L4e-Qi-hIe"/>
                                     <constraint firstAttribute="trailing" secondItem="jBO-4O-Sun" secondAttribute="trailing" id="cfj-k2-PbX"/>
@@ -251,7 +352,6 @@
                             <constraint firstItem="bRb-Ke-KC8" firstAttribute="trailing" secondItem="g6E-js-kNh" secondAttribute="trailing" constant="10" id="hVH-88-Ucv"/>
                             <constraint firstItem="dMN-J8-gtI" firstAttribute="centerX" secondItem="TO8-fp-xQK" secondAttribute="centerX" id="iI8-N0-KB6"/>
                             <constraint firstItem="1hx-j2-HMB" firstAttribute="centerX" secondItem="TO8-fp-xQK" secondAttribute="centerX" id="j7N-t1-zLD"/>
-                            <constraint firstItem="bRb-Ke-KC8" firstAttribute="bottom" secondItem="82H-b2-Z1D" secondAttribute="bottom" constant="30" id="ms2-QG-ZTL"/>
                             <constraint firstItem="82H-b2-Z1D" firstAttribute="top" secondItem="J4o-dR-pmM" secondAttribute="bottom" constant="20" id="myq-IW-anW"/>
                             <constraint firstItem="1hx-j2-HMB" firstAttribute="leading" secondItem="bRb-Ke-KC8" secondAttribute="leading" constant="10" id="uhh-FD-zID"/>
                             <constraint firstItem="bRb-Ke-KC8" firstAttribute="trailing" secondItem="1hx-j2-HMB" secondAttribute="trailing" constant="10" id="vh5-1G-hlo"/>
@@ -267,7 +367,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kh4-CP-2qa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-71" y="1044"/>
+            <point key="canvasLocation" x="-71.200000000000003" y="1043.9280359820091"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="V6K-uy-Ebf">
